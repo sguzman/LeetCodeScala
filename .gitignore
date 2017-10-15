@@ -225,3 +225,4 @@ $RECYCLE.BIN/
 *.lnk
 .idea/
 LeetCodeScala.iml
+target/
