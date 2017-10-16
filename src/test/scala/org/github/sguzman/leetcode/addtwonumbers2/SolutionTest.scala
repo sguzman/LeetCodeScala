@@ -7,7 +7,7 @@ object SolutionTest {
   private def addTwoNumbersGeneralAssertTest(listA: ListNode, listB: ListNode, expect: ListNode): Unit = {
     val actual = Solution.addTwoNumbers(listA, listB)
 
-    Assert.assertTrue(s"Nodes A=[$listA] and B=[$listB] not equal", compareListNodes(listA, listB))
+    Assert.assertEquals(s"Nodes A=[$listA] and B=[$listB] not equal", listA.toString, listB.toString)
   }
 
   private def buildListNode(nums: Int*): ListNode = {
@@ -17,17 +17,17 @@ object SolutionTest {
 
     val head = ListNode(-1)
     var currNode = head
-    nums.foreach(value => {
+    var idx = 0
+    while (idx < nums.length) {
+      val value = nums(idx)
       currNode.x = value
       currNode.next = ListNode(-1)
       currNode = currNode.next
-    })
+
+      idx += 1
+    }
 
     head
-  }
-
-  private def compareListNodes(listA: ListNode, listB: ListNode): Boolean = {
-
   }
 }
 
