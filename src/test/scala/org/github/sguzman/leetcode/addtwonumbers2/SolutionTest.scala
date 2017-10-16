@@ -10,64 +10,60 @@ object SolutionTest {
     Assert.assertEquals(s"Nodes Actual=[$actual] and Expected=[$expect] not equal", expect.toString, actual.toString)
   }
 
-  private def buildListNode(nums: Int*): ListNode = {
+  private def buildListNode(nums: Array[Int]): ListNode = {
+    SolutionTest._buildListNode(ListNode(), nums)
+  }
+
+  private def _buildListNode(list: ListNode, nums: Array[Int]): ListNode = {
     if (nums.isEmpty) {
-      return ListNode(-1)
+      list
+    } else {
+      list.x = nums.head
+      list.next = ListNode()
+      SolutionTest._buildListNode(list.next, nums.tail)
+
+      list
     }
-
-    val head = ListNode(-1)
-    var currNode = head
-    var idx = 0
-    while (idx < nums.length) {
-      val value = nums(idx)
-      currNode.x = value
-      currNode.next = ListNode(-1)
-      currNode = currNode.next
-
-      idx += 1
-    }
-
-    head
   }
 }
 
 class SolutionTest {
   @org.junit.Test
   def addTwoNumbersTest1(): Unit = {
-    val listA = SolutionTest.buildListNode(2, 4, 3)
-    val listB = SolutionTest.buildListNode(5, 6, 4)
+    val listA = SolutionTest.buildListNode(Array(2, 4, 3))
+    val listB = SolutionTest.buildListNode(Array(5, 6, 4))
 
-    val expect = SolutionTest.buildListNode(7, 0, 8)
+    val expect = SolutionTest.buildListNode(Array(7, 0, 8))
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
 
   @org.junit.Test
   def addTwoNumbersTest2(): Unit = {
-    val listA = SolutionTest.buildListNode(1, 3, 3)
-    val listB = SolutionTest.buildListNode(5, 6, 4)
+    val listA = SolutionTest.buildListNode(Array(1, 3, 3))
+    val listB = SolutionTest.buildListNode(Array(5, 6, 4))
 
-    val expect = SolutionTest.buildListNode(6, 9, 7)
+    val expect = SolutionTest.buildListNode(Array(6, 9, 7))
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
 
   @org.junit.Test
   def addTwoNumbersTest3(): Unit = {
-    val listA = SolutionTest.buildListNode(0, 1)
-    val listB = SolutionTest.buildListNode(0, 1, 2)
+    val listA = SolutionTest.buildListNode(Array(0, 1))
+    val listB = SolutionTest.buildListNode(Array(0, 1, 2))
 
-    val expect = SolutionTest.buildListNode(0, 2, 2)
+    val expect = SolutionTest.buildListNode(Array(0, 2, 2))
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
 
   @org.junit.Test
   def addTwoNumbersTest4(): Unit = {
-    val listA = SolutionTest.buildListNode(9, 9)
-    val listB = SolutionTest.buildListNode(1)
+    val listA = SolutionTest.buildListNode(Array(9, 9))
+    val listB = SolutionTest.buildListNode(Array(1))
 
-    val expect = SolutionTest.buildListNode(0, 0, 1)
+    val expect = SolutionTest.buildListNode(Array(0, 0, 1))
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
@@ -75,9 +71,19 @@ class SolutionTest {
   @org.junit.Test
   def addTwoNumbersTest5(): Unit = {
     val listA = null
-    val listB = SolutionTest.buildListNode(0, 1)
+    val listB = SolutionTest.buildListNode(Array(0, 1))
 
-    val expect = SolutionTest.buildListNode(0, 1)
+    val expect = SolutionTest.buildListNode(Array(0, 1))
+
+    SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
+  }
+
+  @org.junit.Test
+  def addTwoNumbersTest6(): Unit = {
+    val listA = null
+    val listB = SolutionTest.buildListNode(Array(0, 8))
+
+    val expect = SolutionTest.buildListNode(Array(0))
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
