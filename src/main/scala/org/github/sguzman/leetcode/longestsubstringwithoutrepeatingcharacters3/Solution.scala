@@ -4,8 +4,8 @@ import scala.collection.mutable
 
 object Solution {
   def lengthOfLongestSubstring(s: String): Int = {
-    var maxLength = 1
-    var idx = 1
+    var maxLength = 0
+    var idx = 0
     var startIdx = 0
 
     val mapIdx = mutable.HashMap[Char, Int]()
