@@ -20,4 +20,10 @@ class SolutionTest {
     SolutionTest.lengthOfLongestSubstringGeneralTest("bbbbbb", 1)
   }
 
+  @Test
+  def lengthOfLongestSubstring3(): Unit = {
+    SolutionTest.lengthOfLongestSubstringGeneralTest("pwwkew", 3)
+  }
+
+
 }
