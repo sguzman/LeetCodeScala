@@ -13,7 +13,11 @@ object SolutionTest {
 
 class SolutionTest {
   @Test
-  def medianOfTwoSortedArrays: Unit = {
+  def medianOfTwoSortedArrays1(): Unit = {
+    val inputA = Array(1, 3)
+    val inputB = Array(2)
+    val expect: Double = 2
 
+    SolutionTest.medianOfTwoSortedArraysGeneralTest(inputA, inputB, expect)
   }
 }
