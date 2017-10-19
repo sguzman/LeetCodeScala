@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode.twosum1
+package org.github.sguzman.leetcode._1twosum
 
 import org.junit.Assert
 

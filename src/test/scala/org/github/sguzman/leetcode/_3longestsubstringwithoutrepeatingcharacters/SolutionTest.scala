@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode.longestsubstringwithoutrepeatingcharacters3
+package org.github.sguzman.leetcode._3longestsubstringwithoutrepeatingcharacters
 
 import org.junit.{Assert, Test}
 

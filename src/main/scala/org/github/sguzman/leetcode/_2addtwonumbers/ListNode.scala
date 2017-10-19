@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode.addtwonumbers2
+package org.github.sguzman.leetcode._2addtwonumbers
 
 sealed case class ListNode(var x: Int = 0, var next: ListNode = null) {
   override def toString: String = {

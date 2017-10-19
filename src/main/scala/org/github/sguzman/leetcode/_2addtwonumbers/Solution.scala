@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode.addtwonumbers2
+package org.github.sguzman.leetcode._2addtwonumbers
 
 /**
   * Definition for singly-linked list.
