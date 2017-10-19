@@ -1,10 +1,13 @@
 package org.github.sguzman.leetcode._4medianoftwosortedarrays
 
-import org.junit.Test
+import org.junit.{Assert, Test}
 
 object SolutionTest {
-  def medianOfTwoSortedArraysGeneralTest(inputA: Array[Int], inputB: Array[Int], expect: Double): Unit = {
+  val delta = 0.00010
 
+  def medianOfTwoSortedArraysGeneralTest(inputA: Array[Int], inputB: Array[Int], expect: Double): Unit = {
+    val actual = Solution.findMedianSortedArrays(inputA, inputB)
+    Assert.assertEquals(expect, actual, delta)
   }
 }
 
