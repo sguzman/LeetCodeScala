@@ -30,5 +30,14 @@ class SolutionTest {
     SolutionTest.medianOfTwoSortedArraysGeneralTest(inputA, inputB, expect)
   }
 
+  @Test
+  def medianOfTwoSortedArrays3(): Unit = {
+    val inputA = Array(3)
+    val inputB = Array(1, 2, 4)
+    val expect: Double = 2.5
+
+    SolutionTest.medianOfTwoSortedArraysGeneralTest(inputA, inputB, expect)
+  }
+
 
 }
