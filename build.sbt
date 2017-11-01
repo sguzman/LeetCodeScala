@@ -21,6 +21,7 @@ resolvers ++= Seq(
 
 /** Source Dependencies */
 libraryDependencies ++= Seq(
+  "com.novocode" % "junit-interface" % "0.11" % "test"
 )
 
 /** Make sure to fork on run */
