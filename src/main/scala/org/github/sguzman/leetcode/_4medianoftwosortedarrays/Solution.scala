@@ -3,16 +3,13 @@ package org.github.sguzman.leetcode._4medianoftwosortedarrays
 object Solution {
   def findMedianSortedArrays(nums1: Array[Int], nums2: Array[Int]): Double = {
     val len = nums1.length + nums2.length
-
-    if (len % 2 == 0) {
-      // if even
-      val a = Solution.findKth(nums1, nums2, len / 2 + 1)
+    if (len %  2 == 0) {
+      val a = Solution.findKth(nums1, nums2, (len - 1) / 2)
       val b = Solution.findKth(nums1, nums2, len / 2)
 
       (a + b) / 2.0
     } else {
-      // if odd
-      Solution.findKth(nums1, nums2, (len + 1) / 2)
+      Solution.findKth(nums1, nums2, (len - 1) / 2)
     }
   }
 
