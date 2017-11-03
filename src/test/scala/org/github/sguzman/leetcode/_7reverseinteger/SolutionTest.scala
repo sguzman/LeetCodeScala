@@ -25,5 +25,10 @@ class SolutionTest {
     SolutionTest.reverseIntegerGeneralTest(0, 0)
   }
 
+  @Test
+  def reverseInteger4(): Unit = {
+    SolutionTest.reverseIntegerGeneralTest(-2147483648, 0)
+  }
+
 
 }
