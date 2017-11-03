@@ -13,7 +13,7 @@ Some of my solutions to LeetCode problems written in Scala, God's language
 |5|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_5longestpalindromicsubstring/Solution.scala) [Java](https://github.com/sguzman/LeetCode/tree/master/other/org/github/sguzman/leetcode/problems/_5longpalinsub)|Medium|
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_6zigzagconversion/Solution.scala) [Java](https://github.com/sguzman/LeetCode/tree/master/other/org/github/sguzman/leetcode/problems/_6zigzag) |Easy|
 |7|[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_7reverseinteger/Solution.scala) [Java](https://github.com/sguzman/LeetCode/tree/master/other/org/github/sguzman/leetcode/problems/_7revint) |Easy|
-|8|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)| | |Easy|
+|8|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_8stringtointegeratoi/Solution.scala) |Easy|
 |9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)| | |Easy|
 |10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)| | |Hard|
 |11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)| | |Medium|
