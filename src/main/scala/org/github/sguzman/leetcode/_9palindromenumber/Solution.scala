@@ -8,7 +8,7 @@ object Solution {
     if (str.length % 2 == 0) {
       str.slice(0, str.length / 2).reverse == str.slice(str.length / 2, str.length)
     } else {
-      str.slice(0, (str.length / 2) - 1).reverse == str.slice(str.length / 2 - 1, str.length)
+      str.slice(0, str.length / 2).reverse == str.slice(str.length / 2 + 1, str.length)
     }
   }
 }
