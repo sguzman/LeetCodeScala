@@ -1,22 +1,15 @@
 package org.github.sguzman.leetcode._11containerwithmostwater
 
 object Solution {
-  def maxArea(height: Array[Int]): Int = {
-    if (height.length == 2) return math.min(height.head, height(1)) * math.min(height.head, height(1))
+  def maxArea(height: Array[Int], maxA: Int = 0): Int = {
+    if (height.length == 0) return maxA
+    if (height.length == 1) return maxA
 
-    var r = height.length - 1
-    var l = 0
-    var maxArea = 0
-    while (l != r) {
-      maxArea = math.max(maxArea, math.min(height(l), height(r)) * (r - l))
+    val min = math.min(height.head, height.last)
+    val newArea = math.max(maxA, min * (height.length - 1))
+    val newHeight = if (min == height.head) height.tail else height.init
 
-      if (height(l) > height(r)) {
-        r -= 1
-      } else {
-        l += 1
-      }
-    }
-
-    maxArea
+    maxArea(newHeight, newArea)
   }
+
 }
