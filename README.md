@@ -17,7 +17,7 @@ Some of my solutions to LeetCode problems written in Scala, God's language
 |9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_9palindromenumber/Solution.scala) |Easy|
 |10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_10regularexpressionmatching/Solution.scala) |Hard|
 |11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_11containerwithmostwater/Solution.scala) |Medium|
-|12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)| | |Medium|
+|12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_12integertoroman/Solution.scala) |Medium|
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)| | |Easy|
 |14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)| | |Easy|
 |15|[3Sum](https://oj.leetcode.com/problems/3sum/)| | |Medium|
