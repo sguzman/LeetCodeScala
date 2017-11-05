@@ -27,5 +27,11 @@ class SolutionTest {
     Assert.assertEquals("", actual)
   }
 
+  @Test
+  def longestPrefix5(): Unit = {
+    val actual = Solution.longestCommonPrefix(Array("aa","ab"))
+    Assert.assertEquals("a", actual)
+  }
+
 
 }
