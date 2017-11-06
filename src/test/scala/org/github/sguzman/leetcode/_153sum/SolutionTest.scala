@@ -27,4 +27,14 @@ class SolutionTest {
 
     SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
   }
+
+    @Test
+  def twoSumTest3(): Unit = {
+    val actual = Solution.threeSum(Array(-1, 0, 1, 2, -1, -4))
+    val expect = List(List(-1, 0, 1), List(-1, -1, 2))
+
+    Assert.assertEquals(expect, actual)
+  }
+
+
 }
