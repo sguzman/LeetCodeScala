@@ -1,6 +1,6 @@
 package org.github.sguzman.leetcode._153sum
 
-import org.junit.Assert
+import org.junit.{Test, Assert}
 
 object SolutionTest {
   private def twoSumGeneralAssertTest(nums: Array[Int], target: Int, expected: Array[Int]): Unit = {
@@ -10,7 +10,7 @@ object SolutionTest {
 }
 
 class SolutionTest {
-  @org.junit.Test
+  @Test
   def twoSumTest1(): Unit = {
     val nums = Array(2, 7, 11, 15)
     val target = 9
@@ -19,7 +19,7 @@ class SolutionTest {
     SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
   }
 
-  @org.junit.Test
+  @Test
   def twoSumTest2(): Unit = {
     val nums = Array(3, 2, 4)
     val target = 6
