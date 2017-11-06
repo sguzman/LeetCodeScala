@@ -2,36 +2,27 @@ package org.github.sguzman.leetcode._153sum
 
 import org.junit.{Test, Assert}
 
-object SolutionTest {
-  private def twoSumGeneralAssertTest(nums: Array[Int], target: Int, expected: Array[Int]): Unit = {
-    val actual = Solution.twoSum(nums, target)
-    Assert.assertArrayEquals(expected, actual)
-  }
-}
-
 class SolutionTest {
   @Test
   def twoSumTest1(): Unit = {
-    val nums = Array(2, 7, 11, 15)
-    val target = 9
-    val expect = Array(0, 1)
+    val actual = Solution.threeSum(Array(-1, 0, 1, 2, -1, -4))
+    val expect = List(List(-1, 0, 1), List(-1, -1, 2))
 
-    SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
+    Assert.assertEquals(expect, actual)
   }
 
   @Test
   def twoSumTest2(): Unit = {
-    val nums = Array(3, 2, 4)
-    val target = 6
-    val expect = Array(1, 2)
+    val actual = Solution.threeSum(Array())
+    val expect = List()
 
-    SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
+    Assert.assertEquals(expect, actual)
   }
 
-    @Test
+  @Test
   def twoSumTest3(): Unit = {
-    val actual = Solution.threeSum(Array(-1, 0, 1, 2, -1, -4))
-    val expect = List(List(-1, 0, 1), List(-1, -1, 2))
+    val actual = Solution.threeSum(Array(-2, 0, 0, 2, 2))
+    val expect = List()
 
     Assert.assertEquals(expect, actual)
   }
