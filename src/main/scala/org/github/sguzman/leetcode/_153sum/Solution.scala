@@ -6,6 +6,7 @@ object Solution {
   def threeSum(nums: Array[Int]): List[List[Int]] = {
     val set = mutable.HashMap[Int,mutable.HashSet[Int]]()
     val lists = mutable.HashSet[Set[(Int,Int)]]()
+    val values = mutable.HashSet[Set[Int]]()
     nums.indices.foreach(idx => {
       val num = nums(idx)
       if (set.contains(num)) {
@@ -22,11 +23,12 @@ object Solution {
         val numJ = nums(jdx)
         val numH = 0 - (numI + numJ)
         if (set.contains(numH)) {
-          val filtered = set(numH).filter(s => s != idx && s != jdx)
-          if (filtered.nonEmpty) {
-            val hdx = filtered.head
-            lists.add(Set((numH, hdx), (numI, idx), (numJ, jdx)))
-            set(numH).remove(hdx)
+          val hdx = set(numH).head
+          if (Set(hdx, idx, jdx).size == 3) {
+            if (!values.contains(Set(numH, numJ, numI))) {
+              lists.add(Set((numH, hdx), (numI, idx), (numJ, jdx)))
+              values.add(Set(numH, numJ, numI))
+            }
           }
         }
       })
