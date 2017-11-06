@@ -6,7 +6,7 @@ class SolutionTest {
   @Test
   def twoSumTest1(): Unit = {
     val actual = Solution.threeSum(Array(-1, 0, 1, 2, -1, -4))
-    val expect = List(List(-1, 0, 1), List(-1, -1, 2))
+    val expect = List(List(1, -1, 0), List(2, -1, -1))
 
     Assert.assertEquals(expect, actual)
   }
@@ -22,7 +22,7 @@ class SolutionTest {
   @Test
   def twoSumTest3(): Unit = {
     val actual = Solution.threeSum(Array(-2, 0, 0, 2, 2))
-    val expect = List()
+    val expect = List(List(2, -2, 0))
 
     Assert.assertEquals(expect, actual)
   }
