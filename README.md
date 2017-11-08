@@ -1,5 +1,4 @@
 # [LeetCode](https://leetcode.com)
-===
 ![Travis CL Sticker](https://travis-ci.org/sguzman/LeetCodeScala.svg?branch=master)
 ![Waffle issues](https://badge.waffle.io/sguzman/LeetCodeScala.svg?columns=all)
 
