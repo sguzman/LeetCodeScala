@@ -1,8 +1,8 @@
 # [LeetCode](https://leetcode.com)
 ![Travis CL Sticker](https://travis-ci.org/sguzman/LeetCodeScala.svg?branch=master)
+[![codecov](https://codecov.io/gh/sguzman/LeetCodeScala/branch/master/graph/badge.svg)](https://codecov.io/gh/sguzman/LeetCodeScala)
 ![Waffle issues](https://badge.waffle.io/sguzman/LeetCodeScala.svg?columns=all)
 
-![Sick looking Codecov sunburst graph](https://codecov.io/gh/sguzman/LeetCodeScala/commit/5b9c2e177eb230d1c4f0b3e0a85dd36d64be6347/graphs/sunburst.svg)
 
 ### Summary
 Some of my solutions to LeetCode problems written in Scala, God's language
