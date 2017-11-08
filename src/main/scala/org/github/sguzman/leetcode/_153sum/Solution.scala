@@ -3,34 +3,38 @@ package org.github.sguzman.leetcode._153sum
 import scala.collection.mutable
 
 object Solution {
-  def threeSum(nums: Array[Int]): List[List[Int]] = {
+  def threeSum(_nums: Array[Int]): List[List[Int]] = {
+    val nums = _nums.sorted
     val lists = mutable.ListBuffer[List[Int]]()
-    val sort = nums.sorted
-
-    (0 until (sort.length - 2)).foreach(idx => {
-      if (idx == 0 || (idx > 0 && sort(idx) != sort(idx - 1))) {
-        var jdx = idx + 1
-        var kdx = sort.length - 1
-        val partial = 0 - sort(idx)
-
-        while (jdx < kdx) {
-          if (sort(jdx) + sort(kdx) == partial) {
-            lists.append(List(sort(idx), sort(jdx), sort(kdx)))
-            while (jdx < kdx && sort(jdx) == sort(jdx + 1)) jdx += 1
-            while (jdx < kdx && sort(kdx) == sort(kdx - 1)) jdx += 1
-
-            jdx += 1
-            kdx -= 1
-          }
-          else if (sort(jdx) + sort(kdx) > partial) {
-            kdx -= 1
+    var i = 0
+    while (i < nums.length - 2) {
+      if (i == 0 || (i > 0 && nums(i) != nums(i - 1))) {
+        var j = i + 1
+        var k = nums.length - 1
+        val sum = -nums(i)
+        while (j < k)
+          if (j != i + 1 && nums(j) == nums(j - 1)) {
+            j += 1
+          } else if (k != nums.length - 1 && nums(k) == nums(k + 1)) {
+            k -= 1
+          } else if (nums(j) + nums(k) == sum) {
+            lists.append(List(nums(i), nums(j), nums(k)))
+            while (j < k && nums(j) == nums(j + 1)) {
+              j += 1
+            }
+            while (j < k && nums(k) == nums(k - 1)) {
+              k -= 1
+            }
+            j += 1
+            k -= 1
+          } else if (nums(j) + nums(k) < sum) {
+            j += 1
           } else {
-            jdx += 1
+            k -= 1
           }
-        }
       }
-    })
-
+      i += 1
+    }
     lists.toList
   }
 }
