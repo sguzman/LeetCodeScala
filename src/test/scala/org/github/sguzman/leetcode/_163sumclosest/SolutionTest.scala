@@ -53,5 +53,15 @@ class SolutionTest {
     Assert.assertEquals(expected, actual)
   }
 
+  @Test
+  def threeSumClosest6(): Unit = {
+    val s = Array(1, 2, 3, 4)
+    val target = 6
+    val expected = 6
+
+    val actual = Solution.threeSumClosest(s, target)
+    Assert.assertEquals(expected, actual)
+  }
+
 
 }
