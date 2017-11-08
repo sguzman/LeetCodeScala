@@ -1,6 +1,5 @@
 package org.github.sguzman.leetcode._13romantointeger
 
-import org.github.sguzman.leetcode._12integertoroman.Solution
 import org.junit.{Assert, Test}
 
 class SolutionTest {
