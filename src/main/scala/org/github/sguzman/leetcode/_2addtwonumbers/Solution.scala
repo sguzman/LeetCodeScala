@@ -32,11 +32,6 @@ object Solution {
       q = if (q != null) q.next else q
       currNode = currNode.next
     }
-
-    if (carry == 1) {
-      currNode.next = ListNode(1)
-    }
-
     sum.next
   }
 }

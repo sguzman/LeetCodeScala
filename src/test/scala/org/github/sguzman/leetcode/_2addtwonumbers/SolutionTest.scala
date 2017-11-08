@@ -67,4 +67,16 @@ class SolutionTest {
 
     SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
   }
+
+  @org.junit.Test
+  def addTwoNumbersTest5(): Unit = {
+    val listA = ListNode(5)
+    val listB = ListNode(5)
+
+    val expect = SolutionTest.buildListNode(Array(0))
+
+    SolutionTest.addTwoNumbersGeneralAssertTest(listA, listB, expect)
+  }
+
+
 }
