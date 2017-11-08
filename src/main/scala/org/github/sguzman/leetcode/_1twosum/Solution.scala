@@ -19,6 +19,6 @@ object Solution {
     }
 
     // Shouldn't get here
-    Array(-1, -1)
+    Array[Int]()
   }
 }

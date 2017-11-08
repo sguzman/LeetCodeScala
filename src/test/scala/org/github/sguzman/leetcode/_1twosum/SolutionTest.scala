@@ -27,4 +27,15 @@ class SolutionTest {
 
     SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
   }
+
+  @org.junit.Test
+  def twoSumTest3(): Unit = {
+    val nums = Array(3, 2, 4)
+    val target = 8
+    val expect = Array[Int]()
+
+    SolutionTest.twoSumGeneralAssertTest(nums, target, expect)
+  }
+
+
 }
