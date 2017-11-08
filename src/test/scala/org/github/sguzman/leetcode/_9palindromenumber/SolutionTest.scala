@@ -22,5 +22,9 @@ class SolutionTest {
     Assert.assertEquals(true, actual)
   }
 
-
+  @Test
+  def palindromeTest4(): Unit = {
+    val actual = Solution.isPalindrome(1231)
+    Assert.assertEquals(false, actual)
+  }
 }
