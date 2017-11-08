@@ -20,7 +20,7 @@ Some of my solutions to LeetCode problems written in Scala, God's language
 |12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_12integertoroman/Solution.scala) |Medium|
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_13romantointeger/Solution.scala) |Easy|
 |14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_14longestcommonprefix/Solution.scala) |Easy|
-|15|[3Sum](https://oj.leetcode.com/problems/3sum/)| | |Medium|
+|15|[3Sum](https://oj.leetcode.com/problems/3sum/)| |[Scala](https://github.com/sguzman/LeetCodeScala/blob/master/src/main/scala/org/github/sguzman/leetcode/_153sum/Solution.scala) |Medium|
 |16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)| | |Medium|
 |18|[4Sum](https://oj.leetcode.com/problems/4sum/)| | |Medium|
 |17|[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)| | |Medium|
