@@ -1,4 +1,6 @@
 # [LeetCode](https://leetcode.com)
+===
+![Travis CL Sticker](https://travis-ci.org/sguzman/LeetCodeScala.svg?branch=master)
 
 ### Summary
 Some of my solutions to LeetCode problems written in Scala, God's language
