@@ -11,7 +11,7 @@ object Solution {
       var summation = 0
       val sort = nums.sorted
       for (idx <- 0 until sort.length - 2) {
-        var ints = sort.slice(idx + 1, sort.length)
+        val ints = sort.slice(idx + 1, sort.length)
         @annotation.tailrec
         def close(elements: Array[Int], min: Int, sum: Int): (Int, Int) = {
           if (elements.length <= 1) (min, sum)
