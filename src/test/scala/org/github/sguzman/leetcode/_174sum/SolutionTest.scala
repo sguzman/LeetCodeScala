@@ -28,4 +28,16 @@ class SolutionTest {
 
     SolutionTest.fourSumGeneralTest(s, t, expect)
   }
+
+  @Test
+  def fourSumTest2(): Unit = {
+    val s = Array[Int]()
+    val t = 0
+
+    val expect = List()
+
+    SolutionTest.fourSumGeneralTest(s, t, expect)
+  }
+
+
 }

@@ -5,7 +5,7 @@ import scala.collection.mutable
 object Solution {
   def fourSum(nums: Array[Int], target: Int): List[List[Int]] = {
     if (nums.length == 4 && nums.sum == target) List(List(nums: _*))
-    else if (nums.length < 4) List(List())
+    else if (nums.length < 4) List()
     else {
       val sort = nums.sorted
       val lists = mutable.ListBuffer[List[Int]]()
