@@ -11,27 +11,25 @@ object Solution {
       var summation = 0
       val sort = nums.sorted
       for (idx <- 0 until sort.length - 2) {
-        var jdx = idx + 1
-        var kdx = sort.length - 1
-        while (jdx < kdx) {
-          val sum = sort(idx) + sort(jdx) + sort(kdx)
-          val diff = math.abs(target - sum)
+        var ints = sort.slice(idx + 1, sort.length)
+        @annotation.tailrec
+        def close(elements: Array[Int], min: Int, sum: Int): (Int, Int) = {
+          if (elements.length <= 1) (min, sum)
+          else {
+            val summ = sort(idx) + elements.head + elements.last
+            val diff = math.abs(target - summ)
 
-          if (diff == 0) {
-            return sum
-          }
-
-          if (diff < min) {
-            min = diff
-            summation = sum
-          }
-
-          if (sum > target) {
-            kdx -= 1
-          } else {
-            jdx += 1
+            if (diff == 0) (diff, summ)
+            else {
+              val (newSum, newMin) = if (diff < min) (summ, diff) else (sum, min)
+              if (summ > target) close(elements.init, newMin, newSum)
+              else close(elements.tail, newMin, newSum)
+            }
           }
         }
+        val ret = close(ints, min, summation)
+        min = ret._1
+        summation = ret._2
       }
 
       summation
