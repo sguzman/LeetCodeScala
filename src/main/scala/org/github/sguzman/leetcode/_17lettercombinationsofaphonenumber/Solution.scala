@@ -5,13 +5,12 @@ object Solution {
     if (digits.isEmpty) List()
     else digits
       .map(toLetters)
-      .foldLeft(Seq(""))(
+      .foldLeft(List(""))(
         (c, d) => c
           .flatMap(i => d
             .map(i + _)
           )
       )
-      .toList
   }
 
   def toLetters(digit: Char): Set[String] = digit match {
