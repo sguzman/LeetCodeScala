@@ -23,12 +23,6 @@ object Solution {
                   lists.append(List(sort(h), sort(i), sort(l), sort(r)).sorted)
                   l += 1
                   r -= 1
-                  while (l < r && sort(l) == sort(l - 1)) {
-                    l += 1
-                  }
-                  while (l < r && sort(r) == sort(r - 1)) {
-                    r -= 1
-                  }
                 } else if (sum > target) {
                   r -= 1
                 } else {
