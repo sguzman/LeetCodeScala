@@ -1,3 +1,4 @@
+![Scala Logo](https://ih0.redbubble.net/image.285146114.0897/flat,800x800,075,f.jpg)
 # [LeetCode](https://leetcode.com)
 ![Travis CL Sticker](https://travis-ci.org/sguzman/LeetCodeScala.svg?branch=master)
 [![codecov](https://codecov.io/gh/sguzman/LeetCodeScala/branch/master/graph/badge.svg)](https://codecov.io/gh/sguzman/LeetCodeScala)
