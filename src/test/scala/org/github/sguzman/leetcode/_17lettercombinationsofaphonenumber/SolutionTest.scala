@@ -16,6 +16,39 @@ class SolutionTest {
     val expect = List("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf")
 
     SolutionTest.testGeneral(input, expect)
-    )
   }
+
+  @Test
+  def letterCombinationsOfAPhoneNumberTest2(): Unit = {
+    val input = ""
+    val expect = List()
+
+    SolutionTest.testGeneral(input, expect)
+  }
+
+  @Test
+  def letterCombinationsOfAPhoneNumberTest3(): Unit = {
+    val input = "45"
+    val expect = List("gj", "gk", "gl", "hj", "hk", "hl", "ij", "ik", "il")
+
+    SolutionTest.testGeneral(input, expect)
+  }
+
+  @Test
+  def letterCombinationsOfAPhoneNumberTest4(): Unit = {
+    val input = "67"
+    val expect = List("mp", "mq", "mr", "ms", "np", "nq", "nr", "ns", "op", "oq", "or", "os")
+
+    SolutionTest.testGeneral(input, expect)
+  }
+
+  @Test
+  def letterCombinationsOfAPhoneNumberTest5(): Unit = {
+    val input = "89"
+    val expect = List("tw", "tx", "ty", "tz", "uw", "ux", "uy", "uz", "vw", "vx", "vy", "vz")
+
+    SolutionTest.testGeneral(input, expect)
+  }
+
+
 }
