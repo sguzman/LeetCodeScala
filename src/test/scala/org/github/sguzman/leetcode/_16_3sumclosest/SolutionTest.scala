@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode._163sumclosest
+package org.github.sguzman.leetcode._16_3sumclosest
 
 import org.junit.{Assert, Test}
 

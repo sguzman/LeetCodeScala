@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode._153sum
+package org.github.sguzman.leetcode._15_3sum
 
 import org.junit.{Test, Assert}
 

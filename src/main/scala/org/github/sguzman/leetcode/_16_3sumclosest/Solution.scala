@@ -1,4 +1,4 @@
-package org.github.sguzman.leetcode._163sumclosest
+package org.github.sguzman.leetcode._16_3sumclosest
 
 object Solution {
   def threeSumClosest(nums: Array[Int], target: Int): Int = {
