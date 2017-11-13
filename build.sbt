@@ -1,11 +1,14 @@
 /** Name of project */
 name := "LeetCodeScala"
 
+/** Organization */
+organization := "com.github.sguzman"
+
 /** Project Version */
 version := "1.0"
 
 /** Scala version */
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 /** Scalac parameters */
 scalacOptions ++= Seq("-feature", "-unchecked", "-deprecation", "-encoding", "utf8")

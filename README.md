@@ -2,6 +2,7 @@
 # [LeetCode](https://leetcode.com)
 ![Travis CL Sticker](https://travis-ci.org/sguzman/LeetCodeScala.svg?branch=master)
 [![codecov](https://codecov.io/gh/sguzman/LeetCodeScala/branch/master/graph/badge.svg)](https://codecov.io/gh/sguzman/LeetCodeScala)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![HitCount](http://hits.dwyl.io/sguzman/LeetCodeScala.svg)](http://hits.dwyl.io/sguzman/LeetCodeScala)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 ![Waffle issues](https://badge.waffle.io/sguzman/LeetCodeScala.svg?columns=all)
