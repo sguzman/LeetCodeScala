@@ -39,5 +39,15 @@ class SolutionTest {
     SolutionTest.fourSumGeneralTest(s, t, expect)
   }
 
+  @Test
+  def fourSumTest3(): Unit = {
+    val s = Array(-1,0,-5,-2,-2,-4,0,1,-2)
+    val t = -9
+
+    val expect = List(List(-5, -4, -1, 1), List(-5, -4, 0, 0), List(-5, -2, -2, 0),List(-4,-2,-2,-1))
+
+    SolutionTest.fourSumGeneralTest(s, t, expect)
+  }
+
 
 }
